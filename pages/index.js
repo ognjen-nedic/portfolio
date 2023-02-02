@@ -1,17 +1,17 @@
-import { Avatar, Button, FloatButton, Layout, Space, Switch, Tooltip, Typography, Modal } from 'antd';
+import { Avatar, Button, FloatButton, Layout, Space, Switch, Tooltip, Typography, Modal, notification } from 'antd';
 import { Grid } from 'antd';
 import { UserOutlined, FileTextOutlined, MailOutlined, PhoneFilled } from '@ant-design/icons';
 import { ConfigProvider, theme } from 'antd'
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 const { Header, Content, Footer } = Layout;
 import Head from 'next/head'
 import { FaLinkedinIn } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs"
 import { GrDocumentPdf } from "react-icons/gr"
-import { VscFilePdf } from "react-icons/vsc"
 import ExperienceModal from '../public/components/ExperienceModal';
 import SkillsModal from '../public/components/SkillsModal';
 import FAQModal from '../public/components/FAQModal';
+import ProjectsCarousel from '../public/components/ProjectsCarousel';
 
 export default function Home() {
   const { Title, Paragraph, Text, Link } = Typography;
@@ -23,11 +23,29 @@ export default function Home() {
   const [isSkillsModalOpen, setIsSkillsModalOpen] = useState(false);
   const [isFAQModalOpen, setIsFAQModalOpen] = useState(false);
 
+  const [api, contextHolder] = notification.useNotification();
+  
+  const openNotification = (placement) => {
+    api.info({
+      message: "Kopirano",
+      placement,
+      duration: 1,
+      style: {
+        width: 200,
+      },
+    });
+  };
 
   const changeThemeOnClick = () => {
     setIsDarkMode((previousValue) => !previousValue);
   };
   
+  const handleDownloadPDFCV = () => {
+    const link = document.createElement('a');
+    link.href = 'portfolio/OgnjenNedic.pdf';
+    link.download = 'Ognjen_Nedić_CV.pdf';
+    link.click();
+  };
 
   return (
     <>
@@ -42,6 +60,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
       </Head>
+      {contextHolder}
       <ConfigProvider 
         theme={{
           token: {
@@ -72,7 +91,7 @@ export default function Home() {
               <Avatar  
                 icon={<UserOutlined />}
                 size={{ xs: 100, sm: 100, md: 100, lg: 200, xl: 200, xxl: 200 }}
-                src="/avatar-picture.jpg"
+                src="portfolio/avatar-picture.jpg"
                 style={{ border : "solid 5px #1abac4" }}
               />
               <Space align="center" direction="vertical">
@@ -98,6 +117,7 @@ export default function Home() {
                       shape="circle"
                       type="primary"
                       icon=<GrDocumentPdf className="pdfIcon" />
+                      onClick={handleDownloadPDFCV}
                       size='large'
                     />
                   </Tooltip>
@@ -107,6 +127,8 @@ export default function Home() {
                       type="primary"
                       icon=<MailOutlined />
                       size='large'
+                      onClick={() =>   openNotification('topRight')}
+                      
                     />
                   </Tooltip>
                   <Tooltip title="+38163588547">
@@ -146,8 +168,9 @@ export default function Home() {
                 Česta pitanja
               </Button>
             </Space>
-            <Space>
+            <Space direction="vertical">
               <Title level={3}>Projekti</Title>
+              <ProjectsCarousel/>
             </Space>
           </Content>
           <Footer style={{ color: theme.useToken().colorPrimary }} className="footer">
@@ -158,6 +181,7 @@ export default function Home() {
             type="primary"
             icon={Object.entries(screens)[1]?.includes(true) ? <GrDocumentPdf className="pdfIcon" /> : <PhoneFilled /> }
             href={Object.entries(screens)[1]?.includes(true) ? "" : "tel:+38163588547" }
+            onClick={Object.entries(screens)[1]?.includes(true) ? handleDownloadPDFCV : () => { console.log("Calling...")}}
             />
         </Layout>
             <Modal title="Iskustvo" open={isExperienceModalOpen} onCancel={() => setIsExperienceModalOpen(false)} footer={null}>
