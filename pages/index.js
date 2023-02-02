@@ -42,7 +42,7 @@ export default function Home() {
   
   const handleDownloadPDFCV = () => {
     const link = document.createElement('a');
-    link.href = 'portfolio/OgnjenNedic.pdf';
+    link.href = '/portfolio/OgnjenNedic.pdf';
     link.download = 'Ognjen_Nedić_CV.pdf';
     link.click();
   };
@@ -91,7 +91,7 @@ export default function Home() {
               <Avatar  
                 icon={<UserOutlined />}
                 size={{ xs: 100, sm: 100, md: 100, lg: 200, xl: 200, xxl: 200 }}
-                src="portfolio/avatar-picture.jpg"
+                src="/portfolio/avatar-picture.jpg"
                 style={{ border : "solid 5px #1abac4" }}
               />
               <Space align="center" direction="vertical">
@@ -127,7 +127,7 @@ export default function Home() {
                       type="primary"
                       icon=<MailOutlined />
                       size='large'
-                      onClick={() =>   openNotification('topRight')}
+                      onClick={() => {navigator.clipboard.writeText("ognjen.n94@gmail.com"),  openNotification('topRight')}}
                       
                     />
                   </Tooltip>

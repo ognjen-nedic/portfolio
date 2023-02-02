@@ -12,8 +12,8 @@ const ProjectsCarousel = () => {
     style={{ width: 300 }}
     cover={
         <img
-          alt="example"
-          src="/astrology-card-pic.jpg"
+          alt="astrology site splash photo"
+          src="/portfolio/astrology-card-pic.jpg"
         />
       }
     actions=
