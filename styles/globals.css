@@ -67,12 +67,17 @@ a {
   margin-left: auto;
  }
 
- .overflowScroll 
-  {
-    overflow: scroll;
-    width: 100%;
-  }
+.overflowScroll 
+{
+  overflow: scroll;
+  width: 100%;
+  scrollbar-width: none;
+}
 
+.overflowScroll::-webkit-scrollbar
+{
+  display: none;
+}
 .footer 
   {
     margin: auto;
