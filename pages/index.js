@@ -156,7 +156,7 @@ export default function Home() {
                       type="primary"
                       icon=<PhoneFilled />
                       size='large'
-                      href="tel:+38163588549"
+                      href="tel:+38163588547"
                     />
                   </Tooltip>
                 </Space>
