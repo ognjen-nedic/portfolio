@@ -1,0 +1,102 @@
+{
+    "hoverButtonTooltip" : "Download CV as PDF"
+    , "experience" : "Experience"
+    , "skills" : "Skills"
+    , "FAQ" : "FAQ"
+    , "projects" : "Projects"
+    , "copied" : "Copied!"
+    , "call": "Call now!"
+    , "astrology": "Astrology"
+
+    , "experienceModal" : 
+        {
+            "programming" : "Programming"
+            , "elmProgrammer" : "Elm programmer"
+            , "workWithClients" : "Work with multiple clients"
+            , "workFromHome" : "Work from home"
+            , "freelancing" : "Freelancing"
+            , "elmProgrammerDuration" : "October 2022 - current"
+            , "conCordSoftDuration" : "August 2022 - October 2022"
+            , "inspiraInternship" : "Full Stack Developer Internship"
+            , "inspiraDuration" : "December 2021 - May 2022"
+            , "freelancingDuration" : "March 2020 - June 2021"
+            , "goodwillPosition" : "Marketing assistant"
+            , "goodwillDuration" : "March 2019 - March 2020"
+            , "poshPosition" : "Social Media Manager"
+            , "poshDuration" : "March 2018 - September 2018"
+        }
+    
+    , "skillsModal" :
+        {
+            "hardSkills" : "Hard skills"
+            , "softSkills" : "Soft skills"
+            , "javaScriptParagraph" : "JavaScript language is the basis of many of the most popular solutions for websites, and my focus has always been in this area. I feel that I have progressed from beginner level to intermediate level, which is largely due to my ability to apply different methods to solve complex problems, as well as my confidence in working with classes, objects and asynchronous functions."
+            , "reactParagraphOne" : "React is a complex library with many unexplored functionalities that I am constantly discovering. Because of the lack of complete insight into its use, I still consider myself to be at the beginning of my journey. My favorite aspect of React is the state management, which I came to love when I was looking for a solution to problems previously used by older developers. I must mention that the older way of solving is not to my liking."
+            , "reactParagraphTwo" : "Additionally, React has a great community where I find answers to questions I have. This popularity of the React library is exactly why I want to go back to working with it."
+            , "nextJSParagraphOne" : "I consider NextJS an extension of React and like to use it in my personal projects because of its elegant site navigation as a Framework (compared to React which functions as a library). However, I am aware that organizations do not use NextJS in a large number of projects they maintain."
+            , "nextJSParagraphTwo" : "It is clear to me that the latest version of NextJS is in many segments different from the previous one, so I draw attention to the fact that I am ready to adapt to the version that the company uses."
+            , "cypressParagraph" : "I got acquainted with Cypress during my work at ConCordSoft company, where TDD (Test Driven Development) was implemented. I feel that I have successfully mastered working with Cypress, although QA is not a career area in which I want to develop. Although I have a preference for QA, I believe I have the potential and ambition for responsibilities in the development sphere."
+            , "elmParagraph" : "Elm as a programming language compiles to JavaScript. It is very convenient for beginners precisely because the compiler prints errors in the code before it starts, so there are no 'runtime errors'. However, I moved in the direction of abandoning development and work in this language for many reasons. The most important thing is the lack of adequate documentation, as well as the small effect of use in the market of website and application development."
+            , "phpParagraph" : "With PHP, I realized why after learning one language (JS in my case) it's easier to learn another - the principles of writing code remain the same. When I was learning it, I got the impression that PHP is a backend language for web site and application development, and I didn't want to invest much learning energy."
+            , "symfonyParagraph" : "A favorite feature of the Symfony framework is entities. Their management and organization of the database in this way seems intuitive to me, and I mastered the basics of Symfony very quickly. However, I haven't devoted enough time and effort to really understand why this kind of backend organization is more intuitive to me than organizing in tables and relations through them."
+            , "sqlParagraph" : "SQL as database management through tables reminded me many times of Excel tables. I used them extensively in my previous jobs and during my studies (one of my first jobs during my studies was data entry). Perhaps too often, when practicing SQL, I used simple paper and pen to draw tables and relations, and ignored the almost identical functionality provided by MySQL. Putting those relationships into the physical world has helped me many times."
+            , "mongoDBParagraph" : "MongoDB has different terminology compared to SQL, but the logic is identical. I admit that more times than I should have been stubborn and tried to solve a database communication problem instead of reaching out to a senior colleague, or a colleague who specializes in working with MongoDB. This is a mistake I will not repeat in the future!"
+            , "antDesignParagraph" : "I used AntDesign to build this site as well! However, I chose it as a demonstration that I am ready to use ready-made component solutions in NextJS/React, adapt them and shape them to match what was intended. I believe that many companies have their own 'boilerplate' that they apply to every project, and ready-made components should be used in implementing the client's requirements."
+            , "atlassianTitle" : "Atlassian catalog"
+            , "atlassianParagraph" : "I have used Atlassian's catalog of tools (Trello, Jira, Confluence, BitBucket) extensively and appreciate their value in working asynchronously in teams across different time zones. I also use Trello for personal needs, not only in programming (one of my hobbies is creative writing, and it is a very useful tool when organizing information in worldbuilding). I've also used Jira and Confluence in a QA role (which also had project management parts), and once I've mastered the basics, I find Confluence to be a powerful collaboration tool as well."
+            , "figmaParagraph" : "Perhaps a Figma management 'skill' rating is not necessary as in this context I present my knowledge solely from a developer's perspective. Although I'm no stranger to design, I haven't used Figma for those purposes until now, and I hope I won't either, because my ambitions don't go in that direction."
+            , "adobeTitle" : "Adobe catalog"
+            , "adobeParagraph" : "Includes PhotoShop, InDesign & Illustrator. Sometimes it's good to know that an individual who doesn't have any responsibilities in working with tools still knows how to work in them. This is a characteristic of smaller agencies (I've had experience with it), so I think it's right that I separated a segment for these tools as well."
+            , "communicativenessTitle" : "Communicativeness"
+            , "communicativenessParagraph" : "I think the time when the stereotype that programmers shouldn't be communicative is a thing of the past. Complex projects require collaboration and open discussion so that all team members have the same conclusion regarding deadlines, client requirements, expectations, etc. My communicativeness derives partly from personal characteristics, and partly from my work in marketing, where communicativeness is the key to success."
+            , "independenceTitle" : "Indenpedence in work"
+            , "independenceParagraph" : "I believe that this skill is appreciated by older fellow mentors (which I received confirmation from previous mentors). However, I am self-aware enough to admit that sometimes for the sake of saving time one should ignore the need for independence and seek help. I also consider this personal skill to be the skill of time management, which I also possess (which saved me many times during my student days)." 
+            , "learningTitle" : "Readiness to learn"
+            , "learningParagraph" : "I think that never before has it been more true that 'One learns while one lives'. The latest advances in technology such as blockchain & AI simply 'force' all employees in tech industries to study them. I am grateful for the fact that this 'having to' is not difficult for me because learning new things always pleases me and I am willing to share them with my current colleagues and colleagues with whom I remain in contact from previous jobs."
+            , "prioritizationTitle" : "Prioritization"
+            , "prioritizationParagraph" : "My least favorite job is working on refactoring a large part of the project (eg moving from class to functional components in React). However, I am aware that if the previous code is an obstacle to implementing new functionality or updating libraries, that refactoring is a priority. I have met many times with colleagues who prioritize work on tasks that they personally prefer, as opposed to tasks that are an obstacle to further work."
+            , "adaptabilityTitle" : "Adaptability"
+            , "adaptabilityParagraph" : "Like learning, adaptability is a skill (innate or learned) that is essential in today's work environment. Not only from the technical side, adaptability to new working conditions, client requests and new deadlines are key to success in work."
+        }
+
+    , "FAQModal":
+    {
+        "firstQuestion":
+            {
+                "title": "Why I no longer work in marketing?"
+                , "paragraphOne": "The motivation for moving from marketing to web site development came from a mismatch of personal preferences and the needs of the work environment."
+                , "paragraphTwo": "As a student of marketing studies, I was attracted to the creative and analytical aspects of this job, which led me to decide to dedicate myself to this field. However, after working in digital marketing and in the marketing department of the company, I realized that I am not comfortable working directly with clients and managing their expectations (and the expectations of the employer). In addition, the key factor that turned me away from marketing was the need to manage other people's money, with the inability to guarantee the results expected by clients or employers."
+                , "paragraphThree" : "During the period of the Covid-19 pandemic, I worked intensively on the technical aspects of digital marketing, such as setting up GTM tags and connecting analytics, which brought me closer to the JavaScript language and Python, which resulted in the decision to try my hand at programming."
+                , "paragraphFour": "Today, I work in the web development industry and appreciate the possibility that each project has tangible and realistic results. I think managing client expectations is an important aspect of this job, but I don't stress about it because most companies have clearly defined roles in the development process, and it's not my responsibility at this point. Overall, moving into this field of work was the right decision for me, because I feel motivated and satisfied in it."
+            }
+        , "secondQuestion": 
+            {
+                "title": "What did I learn working in Elm?"
+                , "paragraphOne": "Elm is a functional programming language that uses a strict type system to prevent common programming errors and has a built-in virtual DOM, making it efficient for building user interfaces. What attracted me to working with Elm is the fact that there are no 'statements', everything is expressions. This means that all functions return some value, and since Elm is a functional language, everything is a function."
+                , "paragraphTwo": "Working with Elm, I learned to use HTML 'nodes' for the user interface. So far I've been working with React and NextJS, which somewhat took away my sense of clean HTML and its structuring, so I re-established that feeling through Elm. This system emphasizes the importance of abstraction and the use of repetitive elements. Also, due to its shortcomings, Elm requires the use of Web Components, which I understand end up being HTML 'nodes' after creation."
+                , "paragraphThree": "Also, working in Elm made me understand the importance of typing, as it occurs in Typescript. Elm provides the ability to create custom value types, which is a great way to force developers to remember all the variants a single value can have."
+                , "paragraphFour": "The last important lesson I learned is the importance of community libraries. Elm doesn't have them, which means I often relied on Web Components for things that in React would be supported by a library or simply JavaScript code."
+            }
+        , "thirdQuestion":
+            {
+                "title": "Work from home or work on site?"
+                , "paragraphOne": "Both. At the beginning of working in the company, I believe that it is better to work 100% from the office with other colleagues, with a gradual transition to a hybrid model. I am very good at working completely from home, but I believe that working from the office has its own value, and I would be most satisfied if I spent at least 2 days a week in the office with other colleagues from the team. Also, I'm no stranger to working entirely from the office, but working from home provides a great atmosphere for focus and I've gotten the impression that I'm more productive in that environment. In the office, I am physically more accessible to colleagues who are not very good at judging when is the best time to ask a quick question."
+            }
+        , "fourthQuestion":
+            {
+                "title": "Why did I choose programming?"
+                , "paragraphOne": "I switched from a career in marketing to programming because I liked the technical side of marketing and discovered the potential of writing code. I was drawn to programming because of its visible results, the opportunity to work on projects that benefit society, and the numerous opportunities for growth and specialization in this field. Also, I feel programming provides a clearer career path than the broader focus I had in marketing."
+            }
+        , "fifthQuestion":
+            {
+                "title": "How do I handle pressure and how do I behave in a stressful environment?"
+                , "paragraphOne": "It is important to distinguish between types of pressure in work. The most obvious is the time pressure, which does not make me uncomfortable. A little less than that, I am comfortable with the pressure of working on parts of the project that are not my direct responsibility if I believe that there are people who are more expert than me in that field. I would rather put off work for a while than put in the effort to do the same task poorly. The pressure I refuse to accept is knowingly working on malicious tools and solutions."
+                , "paragraphTwo": "In a stressful environment, I take on the role of organizer. In other words, I take the initiative and give suggestions on how best to create priorities for the best possible allocation of available time. My feeling and need for detail disappear, and I often ask some of my colleagues to check my work for possible mistakes. This is my weakness, which I am actively working on, because in stressful situations, details can sometimes be the key to an effective solution to a crisis situation."
+            }
+        , "sixthQuestion":
+            {
+                "title": ""
+                , "paragraphOne": ""
+            }
+    }
+}

@@ -3,10 +3,14 @@ import { useState, useEffect } from 'react'
 import { Card, Space } from 'antd'
 import { RxQuestionMarkCircled, RxExternalLink } from "react-icons/rx"
 import { Typography } from "antd"
+import {  useTranslation } from "next-export-i18n";
 
 const ProjectsCarousel = () => {
   const { Link } = Typography;
   const { Meta } = Card;
+  
+  const { t } = useTranslation();
+
   return (
     <Space className="overflowScroll">
       <Card
@@ -26,7 +30,7 @@ const ProjectsCarousel = () => {
       }
       >
       <Meta 
-        title="Astrologija"
+        title={t('astrology')}
       />
       </Card>
     </Space>

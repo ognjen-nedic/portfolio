@@ -1,0 +1,103 @@
+{
+    "hoverButtonTooltip" : "Skini CV u PDF formatu"
+    , "experience" : "Iskustvo"
+    , "skills" : "Veštine"
+    , "FAQ" : "Česta pitanja"
+    , "projects" : "Projekti"
+    , "copied" : "Kopirano!"
+    , "call": "Pozovi!"
+    , "astrology": "Astrologija"
+
+    , "experienceModal" : 
+        {
+            "programming" : "Programiranje"
+            , "elmProgrammer" : "Elm programer"
+            , "workWithClients" : "Rad sa više klijenata"
+            , "workFromHome" : "Rad od kuće"
+            , "freelancing" : "Honorarni rad"
+            , "elmProgrammerDuration" : "Oktobar 2022 - trenutno"
+            , "conCordSoftDuration" : "Avgust 2022 - Oktobar 2022"
+            , "inspiraInternship" : "Stažiranje za full-stack developera"
+            , "inspiraDuration" : "Decembar 2021 - Maj 2022"
+            , "freelancingDuration" : "Mart 2020 - Jun 2021"
+            , "goodwillPosition" : "Marketing asistent"
+            , "goodwillDuration" : "Mart 2019 - Mart 2020"
+            , "poshPosition" : "Menadžer društvenih mreža"
+            , "poshDuration" : "Mart 2018 - Septembar 2018"
+        }
+
+    , "skillsModal" :
+        {
+            "hardSkills" : "Tehničke veštine"
+            , "softSkills" : "Lične veštine"
+            , "javaScriptParagraph" : "JavaScript jezik je osnova mnogih od najpopularnijih rešenja za internet stranice i fokus mi je uvek bio na ovom području. Smatram da sam napredovao sa početničkog nivoa i sada se nalazim na srednjem nivou, što je u velikoj meri zbog sposobnosti da primenjujem različite metode za rešavanje složenih problema, kao i zahvaljujući samouverenosti u radu sa klasama, objektima i asinhronim funkcijama."
+            , "reactParagraphOne" : "React je kompleksna biblioteka sa meni mnogim neistraženim funkcionalnostima koje stalno otkrivam. Upravo zbog nedostatka potpunog uvida u njegovu upotrebu, još uvek smatram da sam na početku svog puta. Moj najomiljeniji aspekt React-a jeste upravljanje state-ovima, što sam zavoleo kada sam tražio rešenje za probleme koji su ranije koristili stariji programeri. Moram napomenuti da mi stariji način rešavanja nije po volji."
+            , "reactParagraphTwo" : " Osim toga, React ima veliku zajednicu u kojoj pronalazim odgovore na pitanja koje imam. Upravo ova popularnost React biblioteke je zašto želim da se vratim radu u njoj."
+            , "nextJSParagraphOne" : "NextJS smatram proširenjem React-a i volim ga koristiti u svojim ličnim projektima zbog njegove elegantne navigacije kroz sajt kao Framework (u poređenju sa React-om koji funkcioniše kao biblioteka). Ipak, svestan sam da organizacije ne koriste NextJS u velikom broju projekata koje održavaju."
+            , "nextJSParagraphTwo" : "Jasno mi je da je poslednja verzija NextJS-a u mnogim segmentima drugačija od prethodne, te skrećem pažnju da sam spreman prilagoditi se verziji koju kompanija koristi."
+            , "cypressParagraph" : "Upoznao sam se sa Cypress-om tokom svog rada u ConCordSoft kompaniji, gde je bilo implementirano TDD (Test Driven Development). Smatram da sam uspešno savladao rad sa Cypress-om, iako QA nije područje karijere u kojem želim da se razvijam. Iako imam sklonost prema QA, verujem da posedujem potencijal i ambiciju za zaduženja u razvojnoj sferi."
+            , "elmParagraph" : "Elm kao programski jezik se kompajluje u JavaScript. Vrlo je povoljan za početnike upravo jer kompajler ispisuje greške u kodu pre nego što se on pokrene, te ne postoje 'runtime errors'. Međutim, krenuo sam u pravcu napuštanja razvoja i rada u ovom jeziku iz mnogo razloga. Najbitniji je nedostatak povoljne dokumentacije, kao i mali učinak korišćenja na tržištu razvoja web stranica i aplikacija."
+            , "phpParagraph" : "Uz PHP sam shvatio zašto je nakon učenja jednog jezika (u mom slučaju JS) lakše naučiti sledeći - principi u pisanju koda ostaju isti. Kada sam ga učio, stekao sam utisak da je PHP jezik za backend deo razvoja web sajtova i aplikacija, i nisam želeo da investiram energiju učenja u većoj meri."
+            , "symfonyParagraph" : "Omiljena funkcionalnost Symfony framework-a jesu entiteti. Njihovo upravljanje i organizacija baze podataka na taj način se meni čini intuitivnom, te sam osnove Symfony-ja savladao vrlo brzo. Međutim, nisam posvetio dovoljno vremena i truda da zaista razumem zašto mi je ovakva organizacija backend-a intuitivnija nego oranizacija u tabelama i relacijama putem njih."
+            , "sqlParagraph" : "SQL kao upravljanje bazom putem tabela me je mnogo puta podsetio na Excel tabele. Njih sam u prethodnim poslovima, a i tokom studija, koristio u velikoj meri (jedan od mojih prvih poslova tokom studija bio je data entry). Možda isuviše često sam prilikom vežbanja SQL-a koristio jednostavan papir i olovku kako bih tabele i relacije iscrtao, a zanemario tu gotovo istu funkcionalnost koju pruža MySQL. Stavljanje tih relacija u fizički svet mi je mnogo puta pomoglo."
+            , "mongoDBParagraph" : "MongoDB ima drugačiju terminologiju u odnosu na SQL, ali je logika identična. Priznajem da sam isuviše puta nego što bi trebalo bio tvrdoglav i pokušavao sam da rešim problem u komunikaciji sa bazom umesto da se obratim starijem kolegi, ili kolegi kojem je specijalnost rad u MongoDB. Ovo je greška koju neću ponavljati ubuduće!"
+            , "antDesignParagraph" : "AntDesign koristim kako bih izgradio i ovaj sajt! Međutim, njega sam odabrao kao demonstraciju da sam spreman da koristim već gotova rešenja komponenti u NextJS/React, prilagođavam se istima i oblikujem ih da odgovaraju onome što je zamišljeno. Verujem da mnoge kompanije imaju svoj 'boilerplate' koji primene na svakom projektu, te gotove komponente treba koristiti u primenjivanju klijentovih zahteva."
+            , "atlassianTitle" : "Atlassian katalog"
+            , "atlassianParagraph" : "Attlasian katalog alata (Trello, Jira, Confluence, BitBucket) sam u velikoj meri koristio i cenim njihovu vrednost u asihronom radu u timovima u različitim vremenskim zonama. Trello koristim i za personalne potrebe, ne samo u programiranju (jedan od mojih hobija je kreativno pisanje, i vrlo je koristan alat pri organizovanju informacija u worldbuilding-u). Jiru i Confluence sam koristio i u ulozi QA (koja je imala i delove projekt menadžmenta), i nakon što sam savladao osnove, smatram da je i Confluence moćan alat za kolaboraciju."
+            , "figmaParagraph" : "Možda ocena 'veštine' upravljanja Figmom nije potrebna jer u ovom kontekstu moje znanje predstavljam isključivo iz perspektive programera. Iako mi dizajn nije stran, nisam do sad koristio Figmu za te potrebe, a nadam se ni da neću jer moje ambicije ne idu u tom smeru"
+            , "adobeTitle" : "Adobe katalog"
+            , "adobeParagraph" : "Podrazumeva PhotoShop, InDesign & Illustrator. Ponekad je dobro znati da pojedinac koji nema nikakva zaduženja u radu sa alatima ipak zna da radi u njima. Ovo je karakteristika manjih agencija (imao sam iskustva sa tim), te smatram da je ispravno što sam odvojio segment i za ove alate."
+            , "communicativenessTitle" : "Komunikativnost"
+            , "communicativenessParagraph" : "Smatram da je vreme kada je stereotip da programeri ne treba da budu komunikativni deo prošlosti. Kompleksni projekti zahtevaju kolaboraciju i otvoren razgovor kako bi svi članovi tima imali isti zaključak po pitanju rokova, zahteva klijenta, očekivanjima i sl. Moja komunikativnost proizilazi delom iz ličnih osobina, a delom iz rada u marketingu, gde je komunikativnost ključ uspeha."
+            , "independenceTitle" : "Samostalnost u radu"
+            , "independenceParagraph" : "Verujem da ovu veštinu cene starije kolege mentori (za šta sam i dobio potvrdu od prethodnih mentora). Međutim, dovoljno sam samosvestan da priznam da ponekat zarad uštede vremena treba zanemariti osećaj potrebe za samostalnošću i potražiti pomoć. Pod ovu ličnu veštinu smatram i veštinom upravljanja vremenom, koju takođe posedujem (što me je spasilo više puta tokom studentskih dana)." 
+            , "learningTitle" : "Okrenutost ka učenju"
+            , "learningParagraph" : "Mislim da nikada ranije nije više bilo istina 'Čovek se uči dok je živ'. Poslednji pomaci u tehnologiji kao što su blockchain & AI jednostavno 'teraju' sve zaposlene u tech industrijama da ih izučavaju. Zahvalan sam na činjenici da meni ovo 'moranje' ne pada teško jer mi učenje novih stvari uvek prija i voljan sam da ih podelim sa sadašnjim, a i kolegama s kojima ostajem u kontaktu sa ranijih angažovanja."
+            , "prioritizationTitle" : "Određivanje prioriteta"
+            , "prioritizationParagraph" : "Posao koji mi najmanje prija jeste rad na refaktorisanju većeg dela projekta (npr. prelazak sa klasnih na funkcionalne komponente u React-u). Međutim, svestan sam da ukoliko je prethodni kod prepreka za implementiranje novih funkcionalnosti ili ažuriranje biblioteka, da je refaktorisanje prioritet. Nemali broj puta sam se susreo sa kolegama koji prioritizuju rad na zadacima koji lično preferiraju, nasuprot zadacima koji su prepreka za dalji rad."
+            , "adaptabilityTitle" : "Prilagodljivost"
+            , "adaptabilityParagraph" : "Isto kao i okrenutost ka učenju, prilagodljivost je veština (urođena ili naučena) koja je neophodna u današnjem radnom okruženju. Ne samo sa tehničke strane, prilagodljivost i novonastalim uslovima rada, zahtevima klijenata i novonastalim rokovima su ključni za uspeh u radu."
+        }
+        , "FAQModal":
+        {
+            "firstQuestion":
+                {
+                    "title": "Zašto sam napustio marketing?"
+                    , "paragraphOne": "Motivacija za prelazak iz marketinga u razvoj web sajtova proistekla je iz neusklađenosti osobnih preferencija i potreba radnog okruženja."
+                    , "paragraphTwo": "Kao student marketinških studija, bio sam privučen kreativnim i analitičkim aspektima ovog posla, što me je doveo do odluke da se posvetim ovoj oblasti. Međutim, nakon rada u digitalnom marketingu i u marketing sektoru kompanije, shvatio sam da mi ne odgovara neposredni rad sa klijentima i upravljanje njihovim očekivanjima (i očekivanjima poslodavca). Osim toga, ključni faktor koji me je odvratio od marketinga jeste potreba da se upravlja tuđim novcem, uz nemogućnost garantovanja rezultata koji su očekivani od strane klijenata ili poslodavaca."
+                    , "paragraphThree" : "Tokom perioda pandemije Covid-19, intenzivno sam radio na tehničkim aspektima digitalnog marketingu, kao što su postavljanje GTM tagova i povezivanje analitike, što me je približilo JavaScript jeziku i Python-u, što je rezultiralo u odluci da se okušam u programiranju."
+                    , "paragraphFour": "Danas radim u industriji razvoja web sajtova i cenim mogućnost da svaki projekat ima opipljive i realne rezultate. Smatram da je upravljanje očekivanjima klijenata važan aspekt ovog posla, ali se ne opterećujem time jer većina kompanija ima jasno definisane uloge u procesu razvoja, a u ovom trenutku to nije moja odgovornost. Ukupno, prelazak u ovu sferu rada bio je ispravna odluka za mene, jer se u njoj osjećam motivisanim i zadovoljnim."
+                }
+            , "secondQuestion": 
+                {
+                    "title": "Šta sam naučio radeći u Elm programskom jeziku?"
+                    , "paragraphOne": "Elm je funkcionalni programski jezik koji koristi strog sistem tipova za sprečavanje uobičajenih grešaka u programiranju i ima ugrađen virtuelni DOM, čineći ga efikasnim za izgradnju korisničkog interfejsa. Ono što me je privuklo radu sa Elm-om jeste činjenica da ne postoje 'statement-i', već su sve ekspresije. To znači da sve funkcije vraćaju neku vrednost, a budući da je Elm funkcionalni jezik, sve je funkcija."
+                    , "paragraphTwo": "U radu sa Elm-om, naučio sam korišćenje HTML 'nodes' za korisnički interfejs. Do sada sam radio sa React-om i NextJS-om, što mi je donekle oduzelo osećaj za čist HTML i njegovo struktuiranje, pa sam kroz Elm ponovo uspostavio taj osećaj. Ovaj sistem potencira važnost apstrakcije i korišćenja ponavljajućih elemenata. Takođe, zbog svojih nedostataka, Elm zahteva korišćenje Web komponenti, što sam shvatio da se na kraju svode na HTML 'nodes' nakon kreiranja."
+                    , "paragraphThree": "Takođe, radom u Elm-u sam razumeo važnost tipiziranja, kao što se javlja u Typescript-u. Elm pruža mogućnost kreiranja prilagođenih tipova vrednosti, što je odličan način za forsiranje programera da ne zaborave sve varijante koje jedna vrednost može imati."
+                    , "paragraphFour": "Poslednja važna lekcija koja sam naučio jeste značaj biblioteka iz zajednice. Elm ih ne poseduje, što znači da sam se često oslanjao na Web komponente za stvari koje bi u React-u bile podržane od strane biblioteke ili jednostavno JavaScript koda."
+                }
+            , "thirdQuestion":
+                {
+                    "title": "Rad iz kuće ili iz kancelarije?"
+                    , "paragraphOne": "Oba. Na početku rada u kompaniji verujem da je bolje da to bude 100% rad iz kancelarije sa drugim kolegama, sa postepenim prelaskom na hibridni model. Vrlo dobro se snalazim u potpunom radu od kuće, ali verujem da rad iz kancelarije ima svoju vrednost, te bih najzadovoljniji bio kada bih sa drugim kolegama iz tima minimum 2 dana nedeljno proveo u kancelariji. Takođe, potpun rad iz kancelarije mi nije stran, ali rad od kuće pruža odličnu atmosferu za fokus i stekao sam utisak da sam produktivniji u tom okruženju. U kancelariji sam fizički dostupniji kolegama koji ne umeju najbolje da procene kada je najbolje vreme za kratko pitanje."
+                }
+            , "fourthQuestion":
+                {
+                    "title": "Zašto sam odabrao da se bavim programiranjem?"
+                    , "paragraphOne": "Prešao sam sa karijere u marketingu na programiranje zato što mi se sviđao tehnički aspekt marketinga i otkrio sam potencijal za pisanje koda. Privuklo me je programiranje zbog svojih vidljivih rezultata, mogućnosti da radim na projektima koji koriste društvu i brojnih prilika za rast i specijalizaciju u ovom polju. Takođe, osećam da programiranje pruža jasniju karijernu putanju u odnosu na širi fokus koji sam imao u marketingu."
+                }
+            , "fifthQuestion":
+                {
+                    "title": "Kako podnosim pritisak i kako se ponašam u stresnom okruženju?"
+                    , "paragraphOne": "Bitno je razlikovati vrste pritiska u radu. Najjasniji je vremenski pritisak koji mi ne stvara nelagodnost. Malo manje od toga mi odgovara pritisak rada na delovima projekta koji nisu moja direktna odgovornost ukoliko smatram da postoje osobe koje su stručnije od mene u tom polju. Radije bih odložio rad za neko vreme nego uložio trud da isti zadatak uradim loše. Pritisak koji odbijam da prihvatim jeste svestan rad na malicioznim alatima i rešenjima."
+                    , "paragraphTwo": "U stresnom okruženju preuzimam ulogu organizatora. Drugim rečima preuzimam inicijativu i dajem predloge kako je najbolje da se naprave prioriteti za što bolje alociranje raspoloživog vremena. Moj osećaj i potreba za detaljisanjem iščeznu, te neretko zamolim neke od kolega da moj rad isprate za eventualne greške. Ovo je moja mana na kojoj aktivno radim jer u stresnim situacijama detalji nekad znaju biti ključni za efikasno rešenje krizne situacije."
+                }
+            , "sixthQuestion":
+                {
+                    "title": ""
+                    , "paragraphOne": ""
+                }
+                
+        }
+
+}

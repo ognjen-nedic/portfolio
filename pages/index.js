@@ -2,7 +2,7 @@ import { Avatar, Button, FloatButton, Layout, Space, Switch, Tooltip, Typography
 import { Grid } from 'antd';
 import { UserOutlined, FileTextOutlined, MailOutlined, PhoneFilled } from '@ant-design/icons';
 import { ConfigProvider, theme } from 'antd'
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 const { Header, Content, Footer } = Layout;
 import Head from 'next/head'
 import { FaLinkedinIn } from "react-icons/fa";
@@ -12,8 +12,13 @@ import ExperienceModal from '../public/components/ExperienceModal';
 import SkillsModal from '../public/components/SkillsModal';
 import FAQModal from '../public/components/FAQModal';
 import ProjectsCarousel from '../public/components/ProjectsCarousel';
+import {  useTranslation,  useLanguageQuery,  LanguageSwitcher} from "next-export-i18n";
 
 export default function Home() {
+  useEffect(() => {
+    setHydrated(true);
+  },[])
+
   const { Title, Paragraph, Text, Link } = Typography;
   const { useBreakpoint } = Grid;
   const screens = useBreakpoint();
@@ -24,10 +29,15 @@ export default function Home() {
   const [isFAQModalOpen, setIsFAQModalOpen] = useState(false);
 
   const [api, contextHolder] = notification.useNotification();
+  const [hydrated, setHydrated] = useState(false);
+
+
+  const { t } = useTranslation();
+  const [languageQuery] = useLanguageQuery();
   
   const openNotification = (placement) => {
     api.info({
-      message: "Kopirano",
+      message: `${t('copied')}`,
       placement,
       duration: 1,
       style: {
@@ -47,8 +57,11 @@ export default function Home() {
     link.click();
   };
 
+  
+
   return (
     <>
+    {hydrated && <>
       <Head>
         <title>Ognjen Nedić | Portfolio & CV</title>
         <meta name="description" content="Sajt koji sadrži portfolio i poslovne informacije Ognjena Nedić."></meta>
@@ -78,11 +91,16 @@ export default function Home() {
         <Layout className="layout">
           <Header className="header">
           <h4 style={{ color: "white" }}>Portfolio & CV</h4>
-          <Switch 
-              checkedChildren={<BsFillSunFill />}
-              unCheckedChildren={<BsFillMoonFill />} 
-              onChange={changeThemeOnClick}
-            />
+          <Space>
+            <Switch 
+                checkedChildren={<BsFillSunFill />}
+                unCheckedChildren={<BsFillMoonFill />} 
+                onChange={changeThemeOnClick}
+              />
+            <p className="langageSwitcher">
+              {languageQuery?.lang === "en" ? <LanguageSwitcher lang="sr">SR</LanguageSwitcher> : <LanguageSwitcher lang="en">EN</LanguageSwitcher>}
+            </p>
+          </Space>
           </Header>
           <Content className="content">
             <Space 
@@ -113,7 +131,7 @@ export default function Home() {
                       size='large'
                     />
                   </Tooltip>
-                  <Tooltip title="CV">
+                  <Tooltip title={t('hoverButtonTooltip')}>
                     <Button 
                       shape="circle"
                       type="primary"
@@ -152,49 +170,50 @@ export default function Home() {
                 block
                 onClick={() => setIsExperienceModalOpen(true)}
               >
-                Iskustvo
+                {t('experience')}
               </Button>
               <Button
                 type="primary"
                 block
                 onClick={() => setIsSkillsModalOpen(true)}
               >
-                Veštine
+                {t('skills')}
               </Button>
               <Button
                 type="primary"
                 block
                 onClick={() => setIsFAQModalOpen(true)}
               >
-                Česta pitanja
+                {t('FAQ')}
               </Button>
             </Space>
             <Space direction="vertical">
-              <Title level={3}>Projekti</Title>
+              <Title level={3}>{t('projects')}</Title>
               <ProjectsCarousel/>
             </Space>
           </Content>
-          <Footer style={{ color: theme.useToken().colorPrimary }} className="footer">
+          <Footer className="footer">
             <Paragraph>2023 | Ognjen Nedić</Paragraph>
           </Footer >
           <FloatButton 
-            tooltip={Object.entries(screens)[1]?.includes(true) ? <span>Skini CV u PDF formatu</span> : <span>Pozovi</span>}
+            tooltip={Object.entries(screens)[1]?.includes(true) ? <span>{t('hoverButtonTooltip')}</span> : <span>{t('call')}</span>}
             type="primary"
             icon={Object.entries(screens)[1]?.includes(true) ? <GrDocumentPdf className="pdfIcon" /> : <PhoneFilled /> }
             href={Object.entries(screens)[1]?.includes(true) ? "" : "tel:+38163588547" }
             onClick={Object.entries(screens)[1]?.includes(true) ? handleDownloadPDFCV : () => { console.log("Calling...")}}
             />
         </Layout>
-            <Modal title="Iskustvo" open={isExperienceModalOpen} onCancel={() => setIsExperienceModalOpen(false)} footer={null}>
+            <Modal title={t('experience')} open={isExperienceModalOpen} onCancel={() => setIsExperienceModalOpen(false)} footer={null}>
               <ExperienceModal />
             </Modal>
-            <Modal title="Veštine" open={isSkillsModalOpen} onCancel={() => setIsSkillsModalOpen(false)} footer={null}>
+            <Modal title={t('skills')} open={isSkillsModalOpen} onCancel={() => setIsSkillsModalOpen(false)} footer={null}>
               <SkillsModal />
             </Modal>
-            <Modal title="Često postavljana pitanja" open={isFAQModalOpen} onCancel={() => setIsFAQModalOpen(false)} footer={null}>
+            <Modal title={t('FAQ')} open={isFAQModalOpen} onCancel={() => setIsFAQModalOpen(false)} footer={null}>
               <FAQModal />
             </Modal>
       </ConfigProvider>
+    </>}
     </>
   )
 }

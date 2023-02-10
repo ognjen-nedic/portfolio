@@ -40,6 +40,11 @@ a {
     justify-content: space-between;
     align-items: center;
   }
+.langageSwitcher 
+  {
+    color: white;
+    cursor: pointer;
+  }
 
 .content 
   { 
@@ -78,6 +83,7 @@ a {
 {
   display: none;
 }
+
 .footer 
   {
     margin: auto;
