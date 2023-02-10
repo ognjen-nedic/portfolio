@@ -52,7 +52,7 @@ export default function Home() {
   
   const handleDownloadPDFCV = () => {
     const link = document.createElement('a');
-    link.href = '/portfolio/OgnjenNedic.pdf';
+    link.href = languageQuery?.lang === "sr" ? '/portfolio/OgnjenNedic.pdf' : '/portfolio/Ognjen_Nedić_CV_ENG.pdf';
     link.download = 'Ognjen_Nedić_CV.pdf';
     link.click();
   };
