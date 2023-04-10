@@ -187,10 +187,6 @@ export default function Home() {
                 {t('FAQ')}
               </Button>
             </Space>
-            <Space direction="vertical">
-              <Title level={3}>{t('projects')}</Title>
-              <ProjectsCarousel/>
-            </Space>
           </Content>
           <Footer className="footer">
             <Paragraph>2023 | Ognjen Nedić</Paragraph>
