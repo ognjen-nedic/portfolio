@@ -84,6 +84,13 @@ a {
   display: none;
 }
 
+.projectsCourosel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .footer 
   {
     margin: auto;

@@ -12,7 +12,7 @@ const ProjectsCarousel = () => {
   const { t } = useTranslation();
 
   return (
-    <Space className="overflowScroll">
+    <Space className="projectsCourosel">
       <Card
       style={{ width: 300 }}
       cover={
