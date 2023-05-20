@@ -33,6 +33,27 @@ const ProjectsCarousel = () => {
         title={t('astrology')}
       />
       </Card>
+
+      <Card
+      style={{ width: 300 }}
+      cover={
+          <img
+            alt="movieslist site splash photo"
+            src="/portfolio/movieslist-card-pic.jpg"
+          />
+        }
+      actions=
+      {
+        [
+          <RxQuestionMarkCircled />
+          , <Link href="https://ognjen-nedic.github.io/movieslist/" target="_blank"><RxExternalLink /></Link>
+        ]
+      }
+      >
+      <Meta 
+        title="MoviesList"
+      />
+      </Card>
     </Space>
   )
 }
